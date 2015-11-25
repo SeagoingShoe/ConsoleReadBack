@@ -1,0 +1,17 @@
+// Learn more about F# at http://fsharp.org
+// See the 'F# Tutorial' project for more help.
+
+open System
+open System.Speech.Synthesis
+
+[<EntryPoint>]
+let main argv = 
+    printfn "Hello world"
+
+    let speechTest = new System.Speech.Synthesis.SpeechSynthesizer()
+    speechTest.Speak("hello world")
+
+   // Console.ReadKey(true)
+    // printfn "%A" argv
+
+    0 // return an integer exit code
